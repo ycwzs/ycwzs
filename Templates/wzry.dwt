@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>走进王者荣耀</title>
+<!-- TemplateEndEditable -->
+<style type="text/css">
+
+#logo{
+	width: 700px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+     }
+body,h1,h2,ul,li{
+	list-style:none;
+	margin: 0px;
+	padding: 0px;
+	font-size:12px;
+	}
+body{
+		background-color:#c7ae9a;
+	}
+
+#box {
+	width: 1200px;
+	margin:0 auto;
+	background-color:#FFF;
+}
+#banner{
+	background: url(../img/2.jpg) no-repeat;
+	height: 250px;
+}
+#menu {
+	background-color: #fceaa9;
+	height: 40px;
+	background-image: url(../img/10.jpg);
+	background-repeat: repeat-x;
+}
+
+#search input{
+	border:solid 1px #016941;
+	}
+#search{
+	border:solid 1px #000000;
+	background-color:#016941;
+	color: #FFF;
+	}
+#menu a {
+	font-family: "宋体";
+	font-size: 14px;
+	color: #016941;
+	line-height: 40px;
+	font-weight: bold;
+	margin-left: 20px;
+	padding:0 15px;
+	text-decoration: none;
+	display: block;
+	float: left;
+}
+#menu a:hover,a.selected
+	 {
+	background-image: url(../img/10.jpg);
+	background-repeat: repeat-x;
+     }
+#content{
+	    border-left:solid 1px #FCEAA9;
+	    border-right:solid 1px #FCEAA9;
+	    }
+#left{
+	width:330px;
+	float:left;
+	padding:0 15px;
+    }
+h1{
+	font:bold 14px "宋体"  ;
+	margin:10px;
+	padding:5px;
+	border-bottom:solid 1px #900;
+	background-color:#FFF;
+	}
+h2{
+	font:bold 14px "宋体";
+	padding:0 5px;
+	background-color: #e6d8c2;
+	line-height:30px;
+  }
+#right{
+	   width:830px;
+	   float:left;
+	   background-color:#FFF;
+      }
+#yingxiongzhiye,#liudaweizhidaibiao
+	    {
+		border:solid 1px #CC9;
+		margin:10px;
+		padding-bottom:20px;
+		background-color:#FFF;
+	    }
+#yingxiongzhiye ul
+	                 {
+		              background-color:#FFF;
+	                 }
+#yingxiongzhiye li{
+                 padding-left:15px;
+                 margin:0 10px;
+                 line-height:25px;
+                 background:url(../img/ico4.gif) no-repeat;
+	             border-bottom:dashed 1px #000;
+	             background-color:#FFF;
+	             }
+#yingxiongzhiye li a{
+	                text-decoration:none;
+	                color:#000;
+	                }
+#yingxiongzhiye li a:hover
+		            {
+			        color:#03F;
+			        }
+#liudaweizhidaibiao img{
+	                   width:190px;
+	                   height:250px;
+	                   margin: 5px;
+				       }
+
+.newTime{
+	    float:right;
+	    width: 100px;
+        }
+.clr{
+	clear:both;
+    }
+footer{
+	background-image:url(../img/footer.jpg);
+	background-repeat:no-repeat;
+	height: 22px;
+	text-align: center;
+	padding-top: 34px;
+	display: block;
+}
+
+</style>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body>
+<div id="logo" align="center"><img src="../img/2.jpg" width="1200" height="200"  alt=""/>
+</div>
+<div>
+	<header>
+  
+    <div id="menu">
+      <nav>
+    <a class="selected">王者荣耀英雄</a>
+     <a href="../cike.html" target="_blank">刺客</a>
+     <a href="../tanke.html" target="_blank">坦克</a>
+     <a href="../fuzhu.html" target="_blank">辅助</a>
+     <a href="../zhanshi.html" target="_blank">战士</a>
+     <a href="../sheshou.html" target="_blank">射手</a>
+     <a href="../fashi.html" target="_blank">法师</a>
+      </nav>
+    </div>
+    </header>
+    <div id="content"> 
+   <div id="left">
+	   <h1><a href="../denglu.html" target="_blank">&gt;&gt;登录界面（点击此处进入登录界面）</a></h1>
+     <div align="center">
+     <a href="../img/1.jpg">
+     <img src="../img/1.jpg" width="220" height="230" alt=""/>
+     </a>
+     </div>
+<p align="center">
+  </p>
+<embed src="../img/cj.mp3" width="313" height="44"><embed>
+<div>
+<p>《王者荣耀》是由腾讯游戏开发并运行的一款运营在 Android 、IOS平台上的MOBA类手游游戏中的玩法以 竞技对战 为主，玩家之间进行1V1、3V3、5V5等多种方式的PVP对战，还可以参加游戏的冒险模式，进行PVE的闯关模式，在满足条件后可以参加游戏的年度排位赛等。
+</p>
+<p>1、《王者荣耀》是由腾讯游戏开发并运行的一款运营在Android、IOS平台上的MOBA类手机游戏，于2015年11月26日在Android、IOS平台上正式公测，游戏前期使用名称有《英雄战迹》、《王者联盟》。
+</p>
+<p>2、《Arena Of Valor》《王者荣耀》的欧美版本将于2018年在任天堂Switch平台发售。</p>
+<p>3、游戏是类dota手游，游戏中的玩法以竞技对战为主，玩家之间进行1V1、3V3、5V5等多种方式的PVP对战，还可以参加游戏的冒险模式，进行PVE的闯关模式，在满足条件后可以参加游戏排位赛等。</p>
+<p>4、2016年11月，《王者荣耀》荣登2016中国泛娱乐指数盛典“中国IP价值榜-游戏榜top10”。</p>
+<p>5、2017年7月2日，腾讯方面发出游戏“限时令”：7月4日起《王者荣耀》12周岁以下(含12周岁)未成年人每天限玩1小时，并计划上线晚上9时以后禁止登陆功能；12周岁以上未成年人每天限玩2小时。超出时间的玩家，将被游戏强制下线。
+</p>
+</div>
+<p align="center"></p>
+   </div>
+<div id="right">
+  <div id="yingxiongzhiye">
+    <h2>&gt;&gt;英雄职业</h2>
+    <ul>
+      <li><a><span class="newTime">刺客</span>全队带节奏抓C位</a></li>
+      <li><a><span class="newTime">法师</span>核心输出清兵中路上下游走</a></li>
+      <li><a><span class="newTime">射手</span>核心输出推塔后期打坦克</a></li>
+      <li><a><span class="newTime">战士</span>高爆发伤害关键时刻充当坦刺</a></li>
+      <li><a><span class="newTime">辅助</span>吃最少的钱，挨最狠的打</a></li>
+      <li><a><span class="newTime">坦克</span>能打能抗能输出</a></li>
+    </ul>
+  </div>
+  <div id="liudaweizhidaibiao"> <h2>&gt;&gt;六大位置代表</h2>
+     
+    <a href="../img/3.jpg" target="_blank"><img src="../img/3.jpg" width="161" height="285"  alt=""/></a>
+    <img src="../img/4.jpg" width="161" height="285" alt=""/>
+    <img src="../img/5.jpg" width="161" height="285" alt=""/>
+    <img src="../img/6.jpg" width="161" height="285" alt=""/>
+    <img src="../img/7.jpg" width="161" height="285" alt=""/>
+    <img src="../img/8.jpg" width="161" height="285" alt=""/>
+    </div>
+</div>
+<div class="clr"></div>
+  </div>
+  <footer>  没有版权所有 &copy; </footer>
+</div>
+
+</body>
+</html>

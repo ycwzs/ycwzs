@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>表单收集信息</title>
+<style type="text/css">
+body {
+	font-family: "微软雅黑";
+   background-color: #c7ae9a;
+}
+#logo,#main{
+	width: 700px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#main {
+	height: 380px;
+}
+#main li {
+	height: 35px;
+	list-style:none;
+}
+#user,#psw{
+height:20px;					
+width:150px;					
+border:#157782 1px solid;		
+background-color:#ffd4e2;		
+}
+#user:hover,#psw:hover {
+	background-color:#FFF; 			
+}
+
+</style>
+</head>
+
+<body>
+<div id="logo" align="center">
+ <p>此页面仅是登录页面，没有连接数据库，点击登录也没有页面跳转仅是为了实现表单信息收集所写的一个界面。</p>
+  <video  width="800" height="430" controls>
+        <source src="img/3.mp4" type="video/mp4">
+    </video>
+</div>
+<div id="main" align="center">
+ <ul>
+   <form>
+     <li>
+       <label for="user">账号:</label>
+       <input type="text" name="username" id="user">
+     </li>
+     <li>
+       <label for="psw3">密码:</label>
+       <input type="password" name="psw" id="psw">
+	   </li>
+     <li>
+	   <input type="submit" name="submit" id="submit" value="登录">
+       
+       <input type="reset" name="reset" id="reset" value="取消">
+     </li> 
+     <a href="index.html" ><p align="center">回到主页</p></a>
+   </form>
+ </ul>
+</div>
+</body>
+</html>
