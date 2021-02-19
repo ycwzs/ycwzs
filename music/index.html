@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音乐播放器</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <style>
+    	*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: black;
+}
+
+.photo{
+    width: 320px;
+    height: 630px;
+    background:linear-gradient(180deg,#ead6ee,#a0f1ea);
+    margin: 50px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkcyan;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #ead5ee;
+    overflow: hidden;
+}
+
+.title{
+    margin-top: 5px;
+    width: 100%;
+    height: 70px;
+    font-size: 32px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.singer{
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.play{
+    width: 182px;
+    height: 193px;
+    background-image: url("B.jpg");
+    background-repeat: no-repeat;
+    margin: 20px auto;
+}
+
+.lrc{
+    width: 100%;
+    height: 220px;
+    margin: 40px auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.lrc p{
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.content{
+    position: relative;
+}
+
+.play.rotate{
+    animation: rot 5s linear infinite;
+}
+
+@keyframes rot{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+ 
+    </style>
+    
+</head>
+<body>
+    <textarea name="" id="txt" cols="30" rows="10" style="display: none;">
+[00:00.05]音乐播放器
+[00:05.10]制作者：御宸
+[00:10.15]music show time
+[00:16.21]在躲过雨的香樟树下等你
+
+[00:21.26]在天桥上的转角擦肩而遇
+
+[00:26.30]制造每个邂逅的缘分累积
+
+[00:30.34]终于可以牵你的手 保护你
+
+[00:34.39]有你的地方就格外的清新
+
+[00:39.43]想着你我的嘴角都会扬起
+
+[00:43.48]倾城的轮廓 沾满我的憧憬
+
+[00:48.54]天空都变透明 听到你的亲口允许
+
+[00:54.59]对全世界宣布爱你
+
+[00:59.03]我只想和你在一起
+
+[01:03.08]这颗心 没畏惧 太坚定
+
+[01:08.12]庆幸让我能够遇见你
+
+[01:12.16]就算全世界都否定
+
+[01:16.21]我也要跟你在一起
+
+[01:21.25]想牵手 想拥抱 想爱你
+
+[01:25.36]天崩地裂也要在一起
+
+[01:36.42]有你的地方就格外的清新
+
+[01:42.46]想着你我的嘴角都会扬起
+
+[01:46.51]倾城的轮廓 沾满我的憧憬
+
+[01:51.57]天空都变透明 听到你的亲口允许
+
+[01:58.02]对全世界宣布爱你
+
+[02:02.07]我只想和你在一起
+
+[02:07.11]这颗心 没畏惧 太坚定
+
+[02:11.15]庆幸让我能够遇见你
+
+[02:15.20]就算全世界都否定
+
+[02:20.24]我也要跟你在一起
+
+[02:24.28]想牵手 想拥抱 想爱你
+
+[02:28.32]天崩地裂也要在一起
+
+[02:32.37]对全世界宣布爱你
+
+[02:37.41]我只想和你在一起
+
+[02:41.46]这颗心 没畏惧 太坚定
+
+[02:46.50]庆幸让我能够遇见你
+
+[02:50.55]对全世界宣布爱你
+
+[02:55.59]我只想和你在一起
+
+[02:59.03]这颗心 没畏惧 太坚定
+
+[03:03.08]庆幸让我能够遇见你
+
+[03:08.12]就算全世界都否定
+
+[03:12.16]我也要跟你在一起
+
+[03:16.21]想牵手 想拥抱 想爱你
+
+[03:21.25]天崩地裂也要在一起
+
+[03:25.40]宣布爱你  想在一起  遇见你
+    </textarea>
+
+    <div class="photo">
+        <div class="title">向全世界宣布爱你</div>
+        <div class="singer">孙子涵、李潇潇</div>
+        <div class="play"></div>
+        <div class="lrc">
+            <div class="content"></div>
+        </div>
+    </div>
+
+    <audio id="myMusic" src="1.mp3" autoplay>
+        您的浏览器不支持播放音频文件！！！
+    </audio>
+<script>
+    	// 提取控制图片的权限
+var btn = document.getElementsByClassName("play")[0];
+
+// 提取控制音乐的权限
+var myMusic = document.getElementById("myMusic");
+
+// 提取控制歌词的权限
+var txt = document.getElementById("txt");
+
+// 提取控制歌词地方的权限
+var con = document.getElementsByClassName("content")[0];
+
+// 标记音乐是否播放
+var mark = true;
+
+// 当音乐图片被点击时的事件处理器
+btn.onclick = function(){
+    if(mark){
+        this.className += " rotate";
+        myMusic.play();
+        mark = false;
+    }
+    else{
+        this.className = "play";
+        myMusic.pause();
+        mark = true;
+    }
+}
+
+var lrc = txt.value;
+var lrcArr = lrc.split("[");
+var html = ""       // 存放标签 p所代表的歌词 
+for(var i = 0; i < lrcArr.length; ++i){
+    var arr = lrcArr[i].split("]");
+    var time = arr[0].split(".");
+    var timer = time[0].split(":");
+    var ms = timer[0] * 60 + timer[1] * 1;  // 以当前时间作 id
+    var text = arr[1];                      // 歌词部分
+    if(text){
+        html += "<p id = " + ms + ">" + text + "</p>";
+    }
+
+    con.innerHTML = html;
+}
+console.log("huameng");
+var num = 0;
+var oP = con.getElementsByTagName("p");     // 获取所有标签的内容
+// 添加音乐的时间更新事件的事件处理器
+myMusic.addEventListener("timeupdate", function(){
+
+    var curTime = parseInt(this.currentTime);
+    if(document.getElementById(curTime)){
+        for(var i = 0; i < oP.length; ++i){
+            oP[i].style.cssText = "font-size: 15px;";
+        }
+        
+        document.getElementById(curTime).style.cssText = "background: linear-gradient(-3deg,#eebd89 0%,#d13abd 100%); -webkit-background-clip: text; color:transparent;font-size: 20px";
+        if(oP[7 + num].id == curTime){
+            con.style.top = -20 * num + "px";
+            ++num;
+        }
+    }
+});
+    </script>
+    <!-- <script src="./index.js"></script> -->
+</body>
+</html>
